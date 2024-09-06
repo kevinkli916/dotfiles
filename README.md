@@ -1,2 +1,2 @@
 # dotfiles
-[macOS] dot files
+[macOS] dotfiles
