@@ -1,0 +1,11 @@
+*
+!.config/
+!.config/kitty
+!.config/neofetch
+!.config/nvim
+!.config/sketchybar
+!.config/skhd
+!.config/yabai
+!.config/wallpapers
+!.zshrc
+!.gitignore
