@@ -207,3 +207,9 @@
 
 
 - in general, it's best to use homebrew (or some package manager) to install programs/tools/etc.
+
+## Resources
+
+- https://www.josean.com/posts/how-to-setup-neovim-2024
+- https://github.com/FelixKratz/SketchyBar
+- https://github.com/FelixKratz/dotfiles
