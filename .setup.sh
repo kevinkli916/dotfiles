@@ -51,7 +51,6 @@ install_brew_formulae() {
     python \
     fastfetch \
     visual-studio-code \
-    docker \
     postman \
     node \
     mas \
