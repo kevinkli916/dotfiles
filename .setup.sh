@@ -65,6 +65,13 @@ install_brew_formulae() {
     vim \
     neovim \
 
+
+  ### Sketchybar Dependencies
+  brew install \
+    lua \
+    switchaudio-osx \
+    nowplaying-cli \
+
   echo "Homebrew Formulae installed."
 }
 
@@ -83,6 +90,9 @@ install_brew_cask() {
   ### Fonts
   brew install --cask \
     font-hack-nerd-font \
+    sf-symbols \
+    font-sf-mono \
+    font-sf-pro \
 
   ### Dev Tools
   brew install --cask \
