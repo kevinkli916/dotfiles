@@ -109,6 +109,7 @@ install_brew_cask() {
     ticktick \
     anki \
     sublime-text \
+    adobe-acrobat-reader \
 
   echo "Homebrew Cask installed."
 }
