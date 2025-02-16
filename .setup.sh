@@ -111,7 +111,7 @@ setup_system_preferences() {
   killall Finder
 
   # Enable Safari developer menu
-  defaults write com.apple.Safari IncludeDevelopMenu -bool true
+  # defaults write com.apple.Safari IncludeDevelopMenu -bool true
 
   # Show file extensions in Finder
   defaults write NSGlobalDomain AppleShowAllExtensions -bool true
@@ -170,7 +170,7 @@ cleanup() {
 copy_config() {
   echo "Planting Configuration Files..."
   [ ! -d "$HOME/dotfiles" ] && git clone --bare git@github.com:kevinkli916/dotfiles.git $HOME/dotfiles
-  git --git-dir=$HOME/dotfiles/ --work-tree=$HOME checkout main
+  git --git-dir=$HOME/dotfiles/ --work-tree=$HOME checkout -f main
 }
 
 # Start services
