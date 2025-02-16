@@ -110,7 +110,7 @@ setup_system_preferences() {
   defaults write com.apple.finder AppleShowAllFiles YES
   
   # Show hard drives in Finder sidebar
-  /usr/libexec/PlistBuddy -c "Set :SidebarItems:systemitems:ShowHardDisks true" ~/Library/Preferences/com.apple.sidebarlists.plist
+  defaults write com.apple.finder SidebarShowHardDrives -bool true
   
   # Restart Finder to apply changes
   killall Finder
