@@ -101,7 +101,25 @@ install_brew_cask() {
     discord \
     slack \
 
+  ### Productivity
+  brew install --cask \
+    fantastical \
+    obsidian \
+    readdle-spark \
+    ticktick \
+    anki \
+    sublime-text \
+
   echo "Homebrew Cask installed."
+}
+
+install_mac_store_apps() {
+  # Mac App Store Apps
+  echo "Installing Mac App Store Apps..."
+  
+  mas install 1435957248 #Drafts
+  
+  echo "Mac App Store Apps installed."
 }
 
 install_sketchybar_deps() {
@@ -214,6 +232,7 @@ start_services() {
 install_homebrew
 install_brew_formulae
 install_brew_cask
+install_mac_store_apps
 install_sketchybar_deps
 setup_system_preferences
 copy_config
