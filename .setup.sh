@@ -180,8 +180,8 @@ copy_config() {
 # Start services
 start_services() {
   echo "Starting services (grant permissions)..."
-  brew services start skhd
-  brew services start yabai
+  skhd --start-service
+  yabai --start-service
   brew services start sketchybar
   brew services start borders
 
