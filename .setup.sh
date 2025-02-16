@@ -135,7 +135,7 @@ setup_system_preferences() {
   killall Finder
 
   # Enable Safari developer menu
-  # defaults write com.apple.Safari IncludeDevelopMenu -bool true
+  defaults write com.apple.Safari IncludeDevelopMenu -bool true
 
   # Show file extensions in Finder
   defaults write NSGlobalDomain AppleShowAllExtensions -bool true
