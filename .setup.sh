@@ -6,6 +6,13 @@ install_homebrew() {
   if ! command -v brew &> /dev/null; then
     echo "Homebrew not found. Installing Homebrew..."
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+    # Add Homebrew to PATH
+    eval "$(/opt/homebrew/bin/brew shellenv)"  # Apple Silicon
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zshrc
+    # Intel Macs (Uncomment if using Intel)
+    # eval "$(/usr/local/bin/brew shellenv)"
+    # echo 'eval "$(/usr/local/bin/brew shellenv)"' >> ~/.zshrc
   else
     echo "Homebrew already installed. Updating..."
     brew update
