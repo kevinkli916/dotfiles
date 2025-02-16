@@ -166,7 +166,6 @@ cleanup() {
 
   # Remove any unnecessary files and caches
   brew cleanup
-  rm -rf ~/Library/Caches/*
 
   echo "Cleanup done."
 }
