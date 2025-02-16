@@ -80,6 +80,10 @@ install_brew_cask() {
   brew install --cask \
     kitty \
 
+  ### Fonts
+  brew install --cask \
+    font-hack-nerd-font \
+
   ### Dev Tools
   brew install --cask \
     docker \
