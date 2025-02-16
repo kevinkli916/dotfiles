@@ -80,7 +80,6 @@ install_brew_cask() {
   ### Terminals
   brew install --cask \
     kitty \
-    neovim \
 
   ### Dev Tools
   brew install --cask \
