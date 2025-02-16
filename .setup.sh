@@ -65,13 +65,6 @@ install_brew_formulae() {
     vim \
     neovim \
 
-
-  ### Sketchybar Dependencies
-  brew install \
-    lua \
-    switchaudio-osx \
-    nowplaying-cli \
-
   echo "Homebrew Formulae installed."
 }
 
@@ -88,11 +81,6 @@ install_brew_cask() {
     kitty \
 
   ### Fonts
-  brew install --cask \
-    font-hack-nerd-font \
-    sf-symbols \
-    font-sf-mono \
-    font-sf-pro \
 
   ### Dev Tools
   brew install --cask \
@@ -114,6 +102,23 @@ install_brew_cask() {
     slack \
 
   echo "Homebrew Cask installed."
+}
+
+install_sketchybar_deps() {
+  ### Packages
+  brew install \
+    lua \
+    switchaudio-osx \
+    nowplaying-cli
+
+  ### Fonts
+  brew install --cask \
+    sf-symbols \
+    font-sf-mono \
+    font-sf-pro \
+
+  # SbarLua
+  (git clone https://github.com/FelixKratz/SbarLua.git /tmp/SbarLua && cd /tmp/SbarLua/ && make install && rm -rf /tmp/SbarLua/)
 }
 
 # Function to set up system preferences
@@ -209,6 +214,7 @@ start_services() {
 install_homebrew
 install_brew_formulae
 install_brew_cask
+install_sketchybar_deps
 setup_system_preferences
 copy_config
 setup_user_environment
