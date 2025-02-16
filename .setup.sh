@@ -180,6 +180,11 @@ start_services() {
   brew services start yabai
   brew services start sketchybar
   brew services start borders
+
+  csrutil status
+  echo "(optional) Disable SIP for advanced yabai features."
+  echo "(optional) Add sudoer manually:\n '$(whoami) ALL = (root) NOPASSWD: sha256:$(shasum -a 256 $(which yabai) | awk "{print \$1;}") $(which yabai) --load-sa' to '/private/etc/sudoers.d/yabai'"
+  echo "Installation complete...\n"
 }
 
 # Run all functions
@@ -187,10 +192,8 @@ install_homebrew
 install_brew_formulae
 install_brew_cask
 setup_system_preferences
+copy_config
 setup_user_environment
 cleanup
 
-csrutil status
-echo "(optional) Disable SIP for advanced yabai features."
-echo "(optional) Add sudoer manually:\n '$(whoami) ALL = (root) NOPASSWD: sha256:$(shasum -a 256 $(which yabai) | awk "{print \$1;}") $(which yabai) --load-sa' to '/private/etc/sudoers.d/yabai'"
-echo "Installation complete...\n"
+start_services
