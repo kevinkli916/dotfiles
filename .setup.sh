@@ -74,7 +74,7 @@ install_brew_cask() {
 
   ### Essentials
   brew install --cask \
-    alfred \
+    raycast \
 
   ### Terminals
   brew install --cask \
