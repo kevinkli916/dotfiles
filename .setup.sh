@@ -57,7 +57,7 @@ install_brew_formulae() {
     mas \
     gh \
     koekeishiya/formulae/skhd \
-    sketchybar \
+    FelixKratz/formulae/sketchybar \
     borders \
     yabai
 
