@@ -210,6 +210,7 @@
 
 ## Resources
 
+- https://www.josean.com/posts/yabai-setup
 - https://www.josean.com/posts/how-to-setup-neovim-2024
 - https://github.com/FelixKratz/SketchyBar
 - https://github.com/FelixKratz/dotfiles
