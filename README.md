@@ -47,6 +47,19 @@
 - shift + alt + 8: move window to space 8
 - shift + alt + 9: move window to space 9
 
+- shift + ctrl + 1: focus space 1
+- shift + ctrl + 2: focus space 2
+- shift + ctrl + 3: focus space 3
+- shift + ctrl + 4: focus space 4
+- shift + ctrl + 5: focus space 5
+- shift + ctrl + 6: focus space 6
+- shift + ctrl + 7: focus space 7
+- shift + ctrl + 8: focus space 8
+- shift + ctrl + 9: focus space 9
+
+- shift + ctrl + q: focus previous space
+- shift + ctrl + q: focus next space
+
 - ctrl + alt + q: quit yabai
 - ctrl + alt + s: start yabai
 - ctrl + alt + r: restart yabai
