@@ -108,6 +108,11 @@ setup_system_preferences() {
 
   # Enable Finder to show all files
   defaults write com.apple.finder AppleShowAllFiles YES
+  
+  # Show hard drives in Finder sidebar
+  /usr/libexec/PlistBuddy -c "Set :SidebarItems:systemitems:ShowHardDisks true" ~/Library/Preferences/com.apple.sidebarlists.plist
+  
+  # Restart Finder to apply changes
   killall Finder
 
   # Enable Safari developer menu
