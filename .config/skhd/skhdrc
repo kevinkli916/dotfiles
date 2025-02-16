@@ -78,6 +78,12 @@ shift + ctrl - 7 : yabai -m space --focus 7;
 shift + ctrl - 8 : yabai -m space --focus 8;
 shift + ctrl - 9 : yabai -m space --focus 9;
 
+# focus previous space
+shift + ctrl - q : yabai -m space --focus prev;
+
+# focus next space
+shift + ctrl - e : yabai -m space --focus next;
+
 # -- Starting/Stopping/Restarting Yabai --
 
 # stop/start/restart yabai
