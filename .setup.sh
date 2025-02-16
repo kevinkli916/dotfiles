@@ -1,13 +1,24 @@
 #!/bin/bash
 set -e
 
+# Function to check and install Xcode Command Line Tools
+install_xcode_clt() {
+  echo "Checking for Xcode Command Line Tools..."
+  if ! xcode-select -p &>/dev/null; then
+    echo "Xcode Command Line Tools not found. Installing..."
+    xcode-select --install
+    echo "Xcode Command Line Tools installed successfully!"
+  else
+    echo "Xcode Command Line Tools already installed."
+  fi
+}
+
 # Function to install Homebrew (if not installed)
 install_homebrew() {
   if ! command -v brew &> /dev/null; then
     echo "Homebrew not found."
     # Install xCode cli tools
-    echo "Installing commandline tools..."
-    xcode-select --install
+    install_xcode_clt
     
     # Install Homebrew
     echo "Installing Homebrew..."
