@@ -176,6 +176,8 @@ copy_config() {
   echo "Planting Configuration Files..."
   [ ! -d "$HOME/dotfiles" ] && git clone --bare git@github.com:kevinkli916/dotfiles.git $HOME/dotfiles
   git --git-dir=$HOME/dotfiles/ --work-tree=$HOME checkout -f main
+
+  chmod +x .setup.ch
 }
 
 # Start services
