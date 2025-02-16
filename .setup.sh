@@ -4,10 +4,17 @@ set -e
 # Function to install Homebrew (if not installed)
 install_homebrew() {
   if ! command -v brew &> /dev/null; then
-    echo "Homebrew not found. Installing Homebrew..."
+    echo "Homebrew not found."
+    # Install xCode cli tools
+    echo "Installing commandline tools..."
+    xcode-select --install
+    
+    # Install Homebrew
+    echo "Installing Homebrew..."
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
     # Add Homebrew to PATH
+    echo "Adding Homebrew to PATH..."
     eval "$(/opt/homebrew/bin/brew shellenv)"  # Apple Silicon
     echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zshrc
     # Intel Macs (Uncomment if using Intel)
