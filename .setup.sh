@@ -56,7 +56,7 @@ install_brew_formulae() {
     node \
     mas \
     gh \
-    skhd \
+    koekeishiya/formulae/skhd \
     sketchybar \
     borders \
     yabai
@@ -66,7 +66,7 @@ install_brew_formulae() {
     vim \
     neovim \
 
-  echo "Homebfew Formulae installed."
+  echo "Homebrew Formulae installed."
 }
 
 # Homebrew Cask
