@@ -123,6 +123,48 @@ install_mac_store_apps() {
   echo "Mac App Store Apps installed."
 }
 
+setup_raycast() {
+  echo "Enabling Raycast CLI..."
+  
+  # Enable the CLI in Raycast preferences
+  defaults write com.raycast.macos enable-cli -bool true
+  
+  # Restart Raycast to apply changes
+  osascript -e 'quit app "Raycast"' && open -a "Raycast"
+  
+  echo "Raycast CLI has been enabled!"
+
+  # List of Raycast extensions to install
+  EXTENSIONS=(
+    "rolandleth/kill-process"
+    "mattisssa/spotify-player"
+    "appest/ticktick"
+    "thomas/visual-studio-code"
+    "gebeto/translate"
+    "abielzulio/chatgpt"
+    "KevinBatdorf/obsidian"
+    "raycast/github"
+    "mblode/google-search"
+    "raycast-apple-intelligence"
+    "tonka3000/youtube"
+    "thomaslombart/messages"
+    "moored/git-repos"
+    "loris/safari"
+    "priithaamer/docker"
+    "anton-suprun/anki"
+  )
+  
+  echo "Installing Raycast extensions..."
+  
+  # Loop through each extension and install it
+  for EXT in "${EXTENSIONS[@]}"; do
+      echo "Installing $EXT..."
+      raycast install extension "$EXT"
+  done
+  
+  echo "All extensions installed successfully!"
+}
+
 install_sketchybar_deps() {
   ### Packages
   brew install \
