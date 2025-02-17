@@ -17,7 +17,7 @@ install_xcode_clt() {
 install_homebrew() {
   if ! command -v brew &> /dev/null; then
     echo "Homebrew not found."
-    # Install xCode cli tools
+    # Install xCode cli tools (Homebrew dependency)
     install_xcode_clt
     
     # Install Homebrew
