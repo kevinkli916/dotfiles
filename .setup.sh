@@ -276,6 +276,7 @@ install_homebrew
 install_brew_formulae
 install_brew_cask
 install_mac_store_apps
+setup_raycast
 install_sketchybar_deps
 setup_system_preferences
 copy_config
