@@ -1,5 +1,10 @@
-# dotfiles
-[macOS] dotfiles
+## **[macOS] dotfiles**
+
+- **OS**: macOS
+- **WM**: [yabai](https://github.com/koekeishiya/yabai)
+- **Bar**: [SketchyBar](https://github.com/FelixKratz/SketchyBar)
+- **Termninal**: [kitty](https://github.com/kovidgoyal/kitty)
+- **Editor**: [neovim](https://github.com/neovim/neovim)
 
 ## Terminal Keybindings
 
