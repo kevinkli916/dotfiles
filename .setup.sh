@@ -170,6 +170,9 @@ setup_system_preferences() {
   # Enable dark mode
   defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
 
+  # Disable autocorrect system-wide
+  defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
+
   echo "System preferences set."
 }
 
