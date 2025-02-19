@@ -110,6 +110,7 @@ install_brew_cask() {
     anki \
     sublime-text \
     adobe-acrobat-reader \
+    chatgpt \
 
   echo "Homebrew Cask installed."
 }
