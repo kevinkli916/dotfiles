@@ -90,6 +90,7 @@ install_brew_cask() {
   ### Browsers
   brew install --cask \
     google-chrome \
+    firefox \
     vladdoster/formulae/vimari \
 
   ### Music
