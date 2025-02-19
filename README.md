@@ -10,10 +10,10 @@
 
 #### skhd
 
-- alt + j: focus south window
-- alt + k: focus north window
-- alt + h: focus west window
-- alt + l: focus east window
+- shift + ctrl + j: focus south window
+- shift + ctrl + k: focus north window
+- shift + ctrl + h: focus west window
+- shift + ctrl + l: focus east window
 
 - alt + s: focus west display
 - alt + g: focus east display
