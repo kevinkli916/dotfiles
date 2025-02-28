@@ -46,6 +46,7 @@ install_brew_formulae() {
   brew install \
     git \
     wget \
+    ripgrep \ ## needed for nvim-telescope
     tree \
     nvm \
     python \
