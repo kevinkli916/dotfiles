@@ -171,8 +171,15 @@ setup_system_preferences() {
   # Enable dark mode
   defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
 
-  # Apply changes
-  killall SystemUIServer
+  # Disable autocorrect system-wide (including Safari)
+  defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
+
+  PREFS_FILE="$HOME/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari.plist"
+  plutil -replace AlwaysRestoreSessionAtLaunch -bool true "$PREFS_FILE"
+  
+  git config --global user.name {{USER_NAME}}
+  git config --global user.email {{USER_EMAIL}}
+  git config --global init.defaultBranch main
   
   echo "System preferences set."
 }
