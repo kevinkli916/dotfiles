@@ -178,7 +178,7 @@ setup_system_preferences() {
   plutil -replace AlwaysRestoreSessionAtLaunch -bool true "$PREFS_FILE"
   
   git config --global user.name {{USER_NAME}}
-  git config --global user.email {{USER_EMAIL}}
+  git config --global user.email {{USER_EMAIL}} # replace with GitHub private noreply email
   git config --global init.defaultBranch main
   
   echo "System preferences set."
