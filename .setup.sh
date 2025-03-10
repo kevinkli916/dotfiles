@@ -114,6 +114,12 @@ install_brew_cask() {
     adobe-acrobat-reader \
     chatgpt \
 
+  ### Trading
+  softwareupdate --install-rosetta --agree-to-license
+
+  brew install --cask \
+    thinkorswim \
+
   echo "Homebrew Cask installed."
 }
 
