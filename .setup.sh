@@ -114,6 +114,10 @@ install_brew_cask() {
     adobe-acrobat-reader \
     chatgpt \
 
+  ### Trading
+    brew install --cask \
+      thinkorswim \
+
   echo "Homebrew Cask installed."
 }
 
