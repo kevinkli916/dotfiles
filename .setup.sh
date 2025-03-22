@@ -158,6 +158,9 @@ setup_system_preferences() {
   
   # Show hard drives in Finder sidebar
   defaults write com.apple.finder SidebarShowHardDrives -bool true
+
+  # Set default Finder view style to list view
+  defaults delete com.apple.finder "FXPreferredViewStyle" && killall Finder
   
   # Restart Finder to apply changes
   killall Finder
